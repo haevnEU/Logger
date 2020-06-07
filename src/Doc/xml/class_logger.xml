@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_logger" kind="class" language="C++" prot="public">
+    <compoundname>Logger</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="logger_8h" local="no">logger.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_logger_1ae80c142ceafe03f045853a200a20c02a" prot="private" static="no" mutable="no">
+        <type>const QString</type>
+        <definition>const QString Logger::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <initializer>= &quot;Logging tool&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="49" column="19" bodyfile="logger.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logger_1a01ad9893d69a8c772a988d7aa26ddf10" prot="private" static="no" mutable="no">
+        <type>const QString</type>
+        <definition>const QString Logger::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <initializer>= &quot;Alpha&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="50" column="19" bodyfile="logger.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logger_1a004fc942db7041aa70f79c30cd7ed6e6" prot="private" static="no" mutable="no">
+        <type>const QString</type>
+        <definition>const QString Logger::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <initializer>= &quot;1.0.0.0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="51" column="19" bodyfile="logger.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logger_1a4db54f4f6c2e80e9e67b859976b67d6f" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString Logger::loggerName</definition>
+        <argsstring></argsstring>
+        <name>loggerName</name>
+        <briefdescription>
+<para>loggerName Name of the logger </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="56" column="13" bodyfile="logger.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logger_1a14540474b6a2897664c9467dbb90d779" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Logger::logging</definition>
+        <argsstring></argsstring>
+        <name>logging</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>logging If true the logging is enabled </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="61" column="10" bodyfile="logger.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logger_1a178b6f2a3f7ed85e8d9c528cd5185c26" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Logger::entries</definition>
+        <argsstring></argsstring>
+        <name>entries</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+<para>entries Describes how many entries are allowed until the log is written to file </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="66" column="9" bodyfile="logger.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logger_1ad8dc4366f6f8a7065c11a13f6bf7157e" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Logger::logEntries</definition>
+        <argsstring></argsstring>
+        <name>logEntries</name>
+        <briefdescription>
+<para>logEntries Actual log entries </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="71" column="17" bodyfile="logger.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logger_1a437aebd03c99391be885ea76de2124bd" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList Logger::logLevelNames</definition>
+        <argsstring></argsstring>
+        <name>logLevelNames</name>
+        <briefdescription>
+<para>logLevelNames </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="88" column="17" bodyfile="logger.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logger_1ab934699b0c903b749c7b87102a556f0a" prot="private" static="no" mutable="no">
+        <type><ref refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9" kindref="member">LogLevel</ref></type>
+        <definition>LogLevel Logger::minimumRequiredLoggLevel</definition>
+        <argsstring></argsstring>
+        <name>minimumRequiredLoggLevel</name>
+        <initializer>= <ref refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9ab1d5eac4b1dca480c8056eaea7663b7a" kindref="member">ALL</ref></initializer>
+        <briefdescription>
+<para>minimumRequiredLoggLevel This attribute is the required minium level to log the a message </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="93" column="14" bodyfile="logger.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_logger_1a9da0f55730ac4331ade9150bda054649" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::write</definition>
+        <argsstring>()</argsstring>
+        <name>write</name>
+        <briefdescription>
+<para>write Writes the log into a file </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="76" column="10" bodyfile="logger.cpp" bodystart="157" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logger_1ae070bd14aad6480cd923e907a613a747" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::write</definition>
+        <argsstring>(QString message)</argsstring>
+        <name>write</name>
+        <param>
+          <type>QString</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>write Appends a log entry into the log list </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method will call <emphasis>logger::write</emphasis> if <computeroutput>entries</computeroutput> are exceed <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message to append into the log list </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="83" column="10" bodyfile="logger.cpp" bodystart="171" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logger_1a36ad61f4b0b7002056c00dffce946360" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString Logger::createHtmlCollapsibleItem</definition>
+        <argsstring>(QStringList items, QString loggerName)</argsstring>
+        <name>createHtmlCollapsibleItem</name>
+        <param>
+          <type>QStringList</type>
+          <declname>items</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>loggerName</declname>
+        </param>
+        <briefdescription>
+<para>createHtmlCollapsibleItem Internal usage. Creates a html collapsible item </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Items which should be created inside the group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loggerName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the logger </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HTML collapsible item </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="101" column="13" bodyfile="logger.cpp" bodystart="143" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_logger_1a3437a50e2f8b32c087a0c422b3e693c7" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Logger::Logger</definition>
+        <argsstring>(QString loggerName)</argsstring>
+        <name>Logger</name>
+        <param>
+          <type>QString</type>
+          <declname>loggerName</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_logger" kindref="compound">Logger</ref> CTOR. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>loggerName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name associtated with this logger </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="108" column="14" bodyfile="logger.cpp" bodystart="3" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logger_1ac2b306e26f6092cbfe530accc4e6c0ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::logOff</definition>
+        <argsstring>()</argsstring>
+        <name>logOff</name>
+        <briefdescription>
+<para>logOff Disables logging </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="113" column="10" bodyfile="logger.cpp" bodystart="217" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logger_1a9e7341d8d08a2729a098896b7c307916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::logOn</definition>
+        <argsstring>(bool intermidate=false)</argsstring>
+        <name>logOn</name>
+        <param>
+          <type>bool</type>
+          <declname>intermidate</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>logOn Enable logging </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intermidate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the logger will immedialty write the entry into a text file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="119" column="10" bodyfile="logger.cpp" bodystart="221" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logger_1ad87ae89aa6b41d73579d2351ed34b67f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::logOn</definition>
+        <argsstring>(LogLevel level, bool intermidate=false)</argsstring>
+        <name>logOn</name>
+        <param>
+          <type><ref refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>intermidate</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>logOn Enable logging </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Describes the minium required log level for logging </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intermidate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the logger will immedialty write the entry into a text file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="126" column="10" bodyfile="logger.cpp" bodystart="228" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logger_1a00fdcdbeb39a2d5d4fb27cc36c35c101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::setLogLevel</definition>
+        <argsstring>(LogLevel level)</argsstring>
+        <name>setLogLevel</name>
+        <param>
+          <type><ref refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>setLogLevel Sets the required minimum log level </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New required log level minimum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="132" column="10" bodyfile="logger.cpp" bodystart="236" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logger_1a1c1c11e08206e03dcda2553d3b0d3e5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::setBuffer</definition>
+        <argsstring>(int entries)</argsstring>
+        <name>setBuffer</name>
+        <param>
+          <type>int</type>
+          <declname>entries</declname>
+        </param>
+        <briefdescription>
+<para>setBuffer Sets the buffer for the loglist </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method overrides when the logger should be flushed. Calling this method will allways flush the logger. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>entries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum entries </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="140" column="10" bodyfile="logger.cpp" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logger_1a5cc08473729523bb4bde48459f2ac468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <briefdescription>
+<para>flush Writes the logger to a file </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="145" column="10" bodyfile="logger.cpp" bodystart="239" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logger_1aa5a469bdede526fe01cad0bfb53397ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::log</definition>
+        <argsstring>(QString message, LogLevel level=INFO)</argsstring>
+        <name>log</name>
+        <param>
+          <type>QString</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type><ref refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+          <defval><ref refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806" kindref="member">INFO</ref></defval>
+        </param>
+        <briefdescription>
+<para>log Logs a message </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message which should be logged </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Level of the message, default is info </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="152" column="10" bodyfile="logger.cpp" bodystart="184" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logger_1acc217e2eb6ce99912a796d699d70e579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::log</definition>
+        <argsstring>(QString message, QString className, int line, LogLevel level=Debug)</argsstring>
+        <name>log</name>
+        <param>
+          <type>QString</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>className</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type><ref refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+          <defval><ref refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9ac909e86054cb6ad83c22bfc2b3e6e5b8" kindref="member">Debug</ref></defval>
+        </param>
+        <briefdescription>
+<para>log Logs a message with given class name and line number </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message which should be logged </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>className</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the class where the log was called </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line where the log was called </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Level of the log entry, default DEBUG </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>1.0.0.0 </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="162" column="10" bodyfile="logger.cpp" bodystart="199" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_logger_1acebda632af84df683e1e4d27c872d557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logger::exportHtml</definition>
+        <argsstring>()</argsstring>
+        <name>exportHtml</name>
+        <briefdescription>
+<para>exportHtml This method creates a html file as log </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="logger.h" line="167" column="10" bodyfile="logger.cpp" bodystart="13" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_logger" kindref="compound">Logger</ref> class allows logging of some application message. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class handles logging information from the application. Different log level are supported. This class should allways be access over loggerhandler::getLogger <simplesect kind="author"><para>Nils Milewski (haevn) </para>
+</simplesect>
+<simplesect kind="date"><para>06/07/2020 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0.0.0 </para>
+</simplesect>
+<simplesect kind="since"><para>1.0.0.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>Logger</label>
+        <link refid="class_logger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>Logger</label>
+        <link refid="class_logger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="logger.h" line="45" column="1" bodyfile="logger.h" bodystart="45" bodyend="171"/>
+    <listofallmembers>
+      <member refid="class_logger_1a36ad61f4b0b7002056c00dffce946360" prot="private" virt="non-virtual"><scope>Logger</scope><name>createHtmlCollapsibleItem</name></member>
+      <member refid="class_logger_1a178b6f2a3f7ed85e8d9c528cd5185c26" prot="private" virt="non-virtual"><scope>Logger</scope><name>entries</name></member>
+      <member refid="class_logger_1acebda632af84df683e1e4d27c872d557" prot="public" virt="non-virtual"><scope>Logger</scope><name>exportHtml</name></member>
+      <member refid="class_logger_1a5cc08473729523bb4bde48459f2ac468" prot="public" virt="non-virtual"><scope>Logger</scope><name>flush</name></member>
+      <member refid="class_logger_1aa5a469bdede526fe01cad0bfb53397ea" prot="public" virt="non-virtual"><scope>Logger</scope><name>log</name></member>
+      <member refid="class_logger_1acc217e2eb6ce99912a796d699d70e579" prot="public" virt="non-virtual"><scope>Logger</scope><name>log</name></member>
+      <member refid="class_logger_1ad8dc4366f6f8a7065c11a13f6bf7157e" prot="private" virt="non-virtual"><scope>Logger</scope><name>logEntries</name></member>
+      <member refid="class_logger_1a3437a50e2f8b32c087a0c422b3e693c7" prot="public" virt="non-virtual"><scope>Logger</scope><name>Logger</name></member>
+      <member refid="class_logger_1a4db54f4f6c2e80e9e67b859976b67d6f" prot="private" virt="non-virtual"><scope>Logger</scope><name>loggerName</name></member>
+      <member refid="class_logger_1a14540474b6a2897664c9467dbb90d779" prot="private" virt="non-virtual"><scope>Logger</scope><name>logging</name></member>
+      <member refid="class_logger_1a437aebd03c99391be885ea76de2124bd" prot="private" virt="non-virtual"><scope>Logger</scope><name>logLevelNames</name></member>
+      <member refid="class_logger_1ac2b306e26f6092cbfe530accc4e6c0ba" prot="public" virt="non-virtual"><scope>Logger</scope><name>logOff</name></member>
+      <member refid="class_logger_1a9e7341d8d08a2729a098896b7c307916" prot="public" virt="non-virtual"><scope>Logger</scope><name>logOn</name></member>
+      <member refid="class_logger_1ad87ae89aa6b41d73579d2351ed34b67f" prot="public" virt="non-virtual"><scope>Logger</scope><name>logOn</name></member>
+      <member refid="class_logger_1ab934699b0c903b749c7b87102a556f0a" prot="private" virt="non-virtual"><scope>Logger</scope><name>minimumRequiredLoggLevel</name></member>
+      <member refid="class_logger_1ae80c142ceafe03f045853a200a20c02a" prot="private" virt="non-virtual"><scope>Logger</scope><name>name</name></member>
+      <member refid="class_logger_1a1c1c11e08206e03dcda2553d3b0d3e5b" prot="public" virt="non-virtual"><scope>Logger</scope><name>setBuffer</name></member>
+      <member refid="class_logger_1a00fdcdbeb39a2d5d4fb27cc36c35c101" prot="public" virt="non-virtual"><scope>Logger</scope><name>setLogLevel</name></member>
+      <member refid="class_logger_1a01ad9893d69a8c772a988d7aa26ddf10" prot="private" virt="non-virtual"><scope>Logger</scope><name>state</name></member>
+      <member refid="class_logger_1a004fc942db7041aa70f79c30cd7ed6e6" prot="private" virt="non-virtual"><scope>Logger</scope><name>version</name></member>
+      <member refid="class_logger_1a9da0f55730ac4331ade9150bda054649" prot="private" virt="non-virtual"><scope>Logger</scope><name>write</name></member>
+      <member refid="class_logger_1ae070bd14aad6480cd923e907a613a747" prot="private" virt="non-virtual"><scope>Logger</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

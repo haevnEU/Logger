@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.18">
+  <compound refid="class_file_i_o" kind="class"><name>FileIO</name>
+    <member refid="class_file_i_o_1a8b0d602c3461181e12c05f655dea5018" kind="function"><name>FileIO</name></member>
+    <member refid="class_file_i_o_1a755e905c3a009f51bea850dd97a48be2" kind="function"><name>getInstance</name></member>
+    <member refid="class_file_i_o_1a29a7f60d08427c6b7e6f6c82e680470d" kind="function"><name>rootPath</name></member>
+    <member refid="class_file_i_o_1a5fa4893f831b2356382ab62de79ba5aa" kind="function"><name>desktopPath</name></member>
+    <member refid="class_file_i_o_1a8094aabc35527bfb3a1b9dcd33ef483b" kind="function"><name>logPath</name></member>
+    <member refid="class_file_i_o_1afa73712be42bad1516264e013da7bdc8" kind="function"><name>addonPath</name></member>
+    <member refid="class_file_i_o_1a5041188bccf0326e688184fe452e216c" kind="function"><name>tmpPath</name></member>
+    <member refid="class_file_i_o_1a8f230078d5c94413349bcefc88c57bc7" kind="function"><name>writeData</name></member>
+    <member refid="class_file_i_o_1a1e95f1ba6d17a4314dbd217b91053227" kind="function"><name>appendData</name></member>
+    <member refid="class_file_i_o_1a518bff608173dc213e516a02a68687ee" kind="function"><name>readData</name></member>
+  </compound>
+  <compound refid="class_logger" kind="class"><name>Logger</name>
+    <member refid="class_logger_1ae80c142ceafe03f045853a200a20c02a" kind="variable"><name>name</name></member>
+    <member refid="class_logger_1a01ad9893d69a8c772a988d7aa26ddf10" kind="variable"><name>state</name></member>
+    <member refid="class_logger_1a004fc942db7041aa70f79c30cd7ed6e6" kind="variable"><name>version</name></member>
+    <member refid="class_logger_1a4db54f4f6c2e80e9e67b859976b67d6f" kind="variable"><name>loggerName</name></member>
+    <member refid="class_logger_1a14540474b6a2897664c9467dbb90d779" kind="variable"><name>logging</name></member>
+    <member refid="class_logger_1a178b6f2a3f7ed85e8d9c528cd5185c26" kind="variable"><name>entries</name></member>
+    <member refid="class_logger_1ad8dc4366f6f8a7065c11a13f6bf7157e" kind="variable"><name>logEntries</name></member>
+    <member refid="class_logger_1a437aebd03c99391be885ea76de2124bd" kind="variable"><name>logLevelNames</name></member>
+    <member refid="class_logger_1ab934699b0c903b749c7b87102a556f0a" kind="variable"><name>minimumRequiredLoggLevel</name></member>
+    <member refid="class_logger_1a9da0f55730ac4331ade9150bda054649" kind="function"><name>write</name></member>
+    <member refid="class_logger_1ae070bd14aad6480cd923e907a613a747" kind="function"><name>write</name></member>
+    <member refid="class_logger_1a36ad61f4b0b7002056c00dffce946360" kind="function"><name>createHtmlCollapsibleItem</name></member>
+    <member refid="class_logger_1a3437a50e2f8b32c087a0c422b3e693c7" kind="function"><name>Logger</name></member>
+    <member refid="class_logger_1ac2b306e26f6092cbfe530accc4e6c0ba" kind="function"><name>logOff</name></member>
+    <member refid="class_logger_1a9e7341d8d08a2729a098896b7c307916" kind="function"><name>logOn</name></member>
+    <member refid="class_logger_1ad87ae89aa6b41d73579d2351ed34b67f" kind="function"><name>logOn</name></member>
+    <member refid="class_logger_1a00fdcdbeb39a2d5d4fb27cc36c35c101" kind="function"><name>setLogLevel</name></member>
+    <member refid="class_logger_1a1c1c11e08206e03dcda2553d3b0d3e5b" kind="function"><name>setBuffer</name></member>
+    <member refid="class_logger_1a5cc08473729523bb4bde48459f2ac468" kind="function"><name>flush</name></member>
+    <member refid="class_logger_1aa5a469bdede526fe01cad0bfb53397ea" kind="function"><name>log</name></member>
+    <member refid="class_logger_1acc217e2eb6ce99912a796d699d70e579" kind="function"><name>log</name></member>
+    <member refid="class_logger_1acebda632af84df683e1e4d27c872d557" kind="function"><name>exportHtml</name></member>
+  </compound>
+  <compound refid="class_logger_handler" kind="class"><name>LoggerHandler</name>
+    <member refid="class_logger_handler_1ac53a18731a78bceedaedd66572508afe" kind="variable"><name>loggers</name></member>
+    <member refid="class_logger_handler_1ae58e01d0feab9abc87d9c658fd05a830" kind="function"><name>LoggerHandler</name></member>
+    <member refid="class_logger_handler_1ae305b1259ac18aa3777c53d78e38b419" kind="function"><name>getInstance</name></member>
+    <member refid="class_logger_handler_1a90679b1755341b74dbf57ed35dbba238" kind="function"><name>getLogger</name></member>
+    <member refid="class_logger_handler_1a32d50a2e37283f15938cf0df3c49c0e3" kind="function"><name>~LoggerHandler</name></member>
+  </compound>
+  <compound refid="fileio_8cpp" kind="file"><name>fileio.cpp</name>
+  </compound>
+  <compound refid="fileio_8h" kind="file"><name>fileio.h</name>
+  </compound>
+  <compound refid="logger_8cpp" kind="file"><name>logger.cpp</name>
+  </compound>
+  <compound refid="logger_8h" kind="file"><name>logger.h</name>
+    <member refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9" kind="enum"><name>LogLevel</name></member>
+    <member refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9ab1d5eac4b1dca480c8056eaea7663b7a" kind="enumvalue"><name>ALL</name></member>
+    <member refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9ac909e86054cb6ad83c22bfc2b3e6e5b8" kind="enumvalue"><name>Debug</name></member>
+    <member refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9a748005382152808a72b1a9177d9dc806" kind="enumvalue"><name>INFO</name></member>
+    <member refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9a74dac7ac23d5b810db6d4067f14e8676" kind="enumvalue"><name>WARN</name></member>
+    <member refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9a2fd6f336d08340583bd620a7f5694c90" kind="enumvalue"><name>ERROR</name></member>
+    <member refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9a651d8a47a6976d6fe05c0e03fb4cd2d0" kind="enumvalue"><name>FATAL</name></member>
+    <member refid="logger_8h_1aca1fd1d8935433e6ba2e3918214e07f9aac132f2982b98bcaa3445e535a03ff75" kind="enumvalue"><name>OFF</name></member>
+  </compound>
+  <compound refid="loggerhandler_8h" kind="file"><name>loggerhandler.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="deprecated" kind="page"><name>deprecated</name>
+  </compound>
+</doxygenindex>

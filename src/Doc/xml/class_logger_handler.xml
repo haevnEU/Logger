@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_logger_handler" kind="class" language="C++" prot="public">
+    <compoundname>LoggerHandler</compoundname>
+    <includes refid="loggerhandler_8h" local="no">loggerhandler.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_logger_handler_1ac53a18731a78bceedaedd66572508afe" prot="private" static="no" mutable="no">
+        <type>QMap&lt; QString, <ref refid="class_logger" kindref="compound">Logger</ref> * &gt;</type>
+        <definition>QMap&lt;QString, Logger*&gt; LoggerHandler::loggers</definition>
+        <argsstring></argsstring>
+        <name>loggers</name>
+        <briefdescription>
+<para>loggers This map contains all created logger </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="loggerhandler.h" line="35" column="10" bodyfile="loggerhandler.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_logger_handler_1ae58e01d0feab9abc87d9c658fd05a830" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LoggerHandler::LoggerHandler</definition>
+        <argsstring>()</argsstring>
+        <name>LoggerHandler</name>
+        <briefdescription>
+<para><ref refid="class_logger_handler" kindref="compound">LoggerHandler</ref> CTOR. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="loggerhandler.h" line="40" column="5" bodyfile="loggerhandler.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_logger_handler_1ae305b1259ac18aa3777c53d78e38b419" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_logger_handler" kindref="compound">LoggerHandler</ref> &amp;</type>
+        <definition>static LoggerHandler&amp; LoggerHandler::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+<para>getInstance This returns a refference to the only existing object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method creates a new instance if none exists and return a reference to the previous created instance. If an instance allready exists the reference will be returned <simplesect kind="return"><para>Reference to the only existing instance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="loggerhandler.h" line="49" column="26" bodyfile="loggerhandler.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_logger_handler_1a90679b1755341b74dbf57ed35dbba238" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_logger" kindref="compound">Logger</ref> *</type>
+        <definition>static Logger* LoggerHandler::getLogger</definition>
+        <argsstring>(QString name)</argsstring>
+        <name>getLogger</name>
+        <param>
+          <type>QString</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>getLogger This static method returns a logger </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If a logger asociated with <computeroutput>name</computeroutput> exists a pointer to the instance will be returned. If theres no instance associated with <computeroutput>name</computeroutput> a new one will be created and returned. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the logger </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to a logger associtated with <computeroutput>name</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="loggerhandler.h" line="64" column="19" bodyfile="loggerhandler.h" bodystart="64" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_logger_handler_1a32d50a2e37283f15938cf0df3c49c0e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LoggerHandler::~LoggerHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~LoggerHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="loggerhandler.h" line="74" column="5" bodyfile="loggerhandler.h" bodystart="74" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_logger_handler" kindref="compound">LoggerHandler</ref> handles different loggers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is used for a managed interaction between different logger. The handler is implemented as a singleton object, it is not required to delete the object. A new logger can be called from a static call to getLogger(String). It will return a pointer to the logger or creates a new one. If the application quits all acuired logger will be flushed and save into a file. This class also frees used resources. <simplesect kind="author"><para>Nils Milewski (haevn) </para>
+</simplesect>
+<simplesect kind="date"><para>06/07/2020 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0.0.0 </para>
+</simplesect>
+<simplesect kind="since"><para>1.0.0.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="loggerhandler.h" line="28" column="1" bodyfile="loggerhandler.h" bodystart="28" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_logger_handler_1ae305b1259ac18aa3777c53d78e38b419" prot="private" virt="non-virtual"><scope>LoggerHandler</scope><name>getInstance</name></member>
+      <member refid="class_logger_handler_1a90679b1755341b74dbf57ed35dbba238" prot="public" virt="non-virtual"><scope>LoggerHandler</scope><name>getLogger</name></member>
+      <member refid="class_logger_handler_1ae58e01d0feab9abc87d9c658fd05a830" prot="private" virt="non-virtual"><scope>LoggerHandler</scope><name>LoggerHandler</name></member>
+      <member refid="class_logger_handler_1ac53a18731a78bceedaedd66572508afe" prot="private" virt="non-virtual"><scope>LoggerHandler</scope><name>loggers</name></member>
+      <member refid="class_logger_handler_1a32d50a2e37283f15938cf0df3c49c0e3" prot="public" virt="non-virtual"><scope>LoggerHandler</scope><name>~LoggerHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
